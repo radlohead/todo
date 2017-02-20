@@ -6,7 +6,7 @@ class Header extends Component {
     };
     handleKeyDown(e){
         const val = this._input.value;
-        if(!val || e.keyCode !== 13) return console.log("22");
+        if(!val || e.keyCode !== 13) return;
         this.props.handleAddTodo(val);
         this._input.value = '';
     };

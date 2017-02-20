@@ -14,7 +14,7 @@ class App extends Component {
             editing: null
         };
     }
-    componentDidMount(){
+    componentWillMount(){
         axios.get('./state.json')
             .then(response => {
                 this.setState({ todos: response.data.todos });
